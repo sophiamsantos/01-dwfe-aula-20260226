@@ -2,6 +2,8 @@
 
 git add .
 
-git commit -m "Titulo"
+git commit -m "texto"
 
 git push
+
+git clone url 
