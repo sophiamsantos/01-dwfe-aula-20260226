@@ -1,0 +1,32 @@
+/* MENU LATERAL */
+.nav {
+    background-color: #eee;
+    padding: 0.5rem;
+    width: 15rem;
+}
+
+.a {
+    text-decoration: none;
+}
+.li{
+    margin-bottom: 1rem;
+}
+
+.opcao{
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    background-color: #eee;
+    color: #5e5e5e;
+}
+.opcao:hover {
+    background-color: #ccc;
+    color: black;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem;
+    border: 0.1rem solid #bdbdbd;
+}
+
+.opcao:hover .rotulo {
+text-align: right;
+}
+
