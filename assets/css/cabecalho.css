@@ -1,0 +1,58 @@
+header {
+    /* border: 0.1rem solid red; */
+    height: 2rem; /*altura da barra*/
+    background-color: #252523; /*cor de fundo da barra*/
+    color: #eee;/*cor do que está escrito na barra*/
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+    padding: .5rem; /*deixa a barra afastada das letras*/
+}
+
+.logo {
+    border: .1rem blue solid; /* borda destacada*/
+    background-color: blue; /*cor de fundo ao redor da logo da página*/
+    color: #eeee; /*cor da escrita*/
+    font-weight: bold; /* deixa escrita em negrito*/
+    border-radius: 100%; /* arredondar bordas*/
+    width: 1rem;
+    height: 1rem;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 0.7rem; /*distancia do canto direito da pagina*/
+}
+
+.titulo {
+    /* border: 1rem solid white; */
+    flex: 1;
+}
+
+.menu-hamburguer {
+    /* border: .1rem solid red; */
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #a01e1e;
+}
+
+.menu-hamburguer i {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.menu-hamburguer:hover i {
+    color: #e41717; /* cor do icone */
+}
+
+.menu-hamburguer i:hover {
+    color: white; 
+}

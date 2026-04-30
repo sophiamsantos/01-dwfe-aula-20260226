@@ -1,32 +1,56 @@
-/* MENU LATERAL */
-.nav {
-    background-color: #eee;
-    padding: 0.5rem;
+nav {
+    /* border: .1rem solid orangered; */
     width: 15rem;
+    background-color: #eee;
+    padding: .5rem;
 }
 
-.a {
+a /*ancora, o link*/{
     text-decoration: none;
 }
-.li{
+
+li {
+    /*todas as margins são para definir distancia de algum lugar, 
+    top do topo, left da esquerda e bottom debaixo*/
     margin-bottom: 1rem;
+    list-style-type: none ; /* tirar os pontinhos da li*/
 }
 
-.opcao{
+.opcao {
     display: flex;
     border-radius: 0.5rem;
     padding: 0.6rem;
     background-color: #eee;
     color: #5e5e5e;
 }
+
 .opcao:hover {
     background-color: #ccc;
-    color: black;
-    box-shadow: 0.3rem 0.3rem 0.3rem 0.1rem;
+    color: black; /*cor da letra*/
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.01rem #ddd; /*deslocamento eixo x, deslocamento eixo y, 
+    intensidade ou o borrão da sombra, espalhamento da sombra, cor da sombra*/
     border: 0.1rem solid #bdbdbd;
 }
 
 .opcao:hover .rotulo {
-text-align: right;
+    text-align: right;
+} /*quando passa o mousse em cima a opção a ser alinha a direita é o rotulo*/
+
+.opcao:hover .icone-final {
+    opacity: 1; /*quando passa o mousse pelo elemento*/
 }
 
+.icone-inicial {
+    width: 1.5rem;
+}
+
+.rotulo {
+    flex: 1;
+}
+
+.icone-final {
+    width: 1rem;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.3s ease-in; 
+}

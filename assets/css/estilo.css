@@ -1,95 +1,19 @@
-/* Importando estilo do cartão */
-@import url("cartao.css");
-@import url("menulateral.css");
 @import url("cabecalho.css");
-/* Reset básico (zera espaçamentos padrão) */
+@import url("cartao.css");
+@import url("corpo.css");
+@import url("menulateral.css");
+@import url("rodape.css");
+@import url("responsividade.css");
+
 * {
     font-family: "Segoe UI", Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* ajuda MUITO no layout */
 }
 
-/* Estrutura geral da página */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
-/* Cabeçalho */
-header {
-    height: 2.5rem;
-    background-color: #252523;
-    color: #eee;
-    display: flex;
-    align-items: center; /* centraliza vertical */
-    padding: .5rem 1rem;
-}
-
-/* Área principal (menu + conteúdo) */
-section {
-    display: flex;
-    flex: 1;
-}
-
-/* Lista do menu */
-.menu-lateral {
-    list-style: none; /* tira bolinhas */
-}
-
-/* Link do menu */
-.menu-lateral a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* Cada opção do menu */
-.opcao {
-    display: flex;
-    justify-content: space-between; /* separa conteúdo e seta */
-    align-items: center;
-    padding: .6rem;
-    border-radius: 6px;
-    margin-bottom: .4rem;
-    transition: 0.2s;
-}
-
-/* Efeito ao passar o mouse */
-.opcao:hover {
-    background-color: #ddd;
-}
-
-/* Parte esquerda (ícone + texto) */
-.icone-inicial {
-    display: flex;
-    align-items: center;
-    gap: .5rem; /* espaço entre ícone e texto */
-}
-
-/* Parte direita (setinha) */
-.item-final {
-    display: flex;
-    align-items: center;
-}
-
-/* CONTEÚDO PRINCIPAL */
-main {
-    display: flex;
-    flex: 1;
-    padding: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap; /* quebra linha se tiver vários cards */
-}
-
-/* RODAPÉ */
-footer {
-    height: 2.5rem;
-    background-color: #252523;
-    color: #eee;
-    display: flex;
-    align-items: center;
-    padding: .5rem 1rem;
-}
-

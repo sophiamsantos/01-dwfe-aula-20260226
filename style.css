@@ -1,0 +1,15 @@
+.logo {
+    border: .1rem blue solid; /* borda destacada*/
+    background-color: blue; /*cor de fundo ao redor da logo da página*/
+    color: #eeee; /*cor da escrita*/
+    font-weight: bold; /* deixa escrita em negrito*/
+    border-radius: 100%; /* arredondar bordas*/
+    width: 1rem;
+    height: 1rem;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 0.7rem; /*distancia do canto direito da pagina*/
+}

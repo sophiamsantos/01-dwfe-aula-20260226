@@ -1,132 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Configurações básicas da página -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Site de Notícias</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Noticias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/css/js/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">W</div>
+        <h1 class="titulo">Login</h1>
+    </header>
 
-    <!-- Link do CSS -->
-    <link rel="stylesheet" href="./assets/css/estilo.css" />
-
-    <!-- Importando ícones do Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-
-  <body>
-    <!-- Cabeçalho do site -->
-    <header>Meu Site de Notícias</header>
-
-    <section>
-      <!-- Menu lateral -->
-      <nav>
-        <ul class="menu-lateral">
-          
-          <!-- Item do menu -->
-          <li>
-            <a href="#">
-              <div class="opcao">
-                <div class="icone-inicial">
-                  <i class="fa-solid fa-envelope"></i> <!-- Ícone -->
-                  <div class="rotulo">Mensagem</div> <!-- Texto -->
-                </div>
-                <div class="item-final">
-                  <i class="fa-solid fa-chevron-right"></i> <!-- Setinha -->
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <!-- Outro item -->
-          <li>
-            <a href="#">
-              <div class="opcao">
-                <div class="icone-inicial">
-                  <i class="fa-solid fa-newspaper"></i>
-                  <div class="rotulo">Notícia</div>
-                </div>
-                <div class="item-final">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <!-- Outro item -->
-          <li>
-            <a href="#">
-              <div class="opcao">
-                <div class="icone-inicial">
-                  <i class="fa-solid fa-user"></i>
-                  <div class="rotulo">Perfil</div>
-                </div>
-                <div class="item-final">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <!-- Sair -->
-          <li>
-            <a href="#">
-              <div class="opcao">
-                <div class="icone-inicial">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                  <div class="rotulo">Sair</div>
-                </div>
-                <div class="item-final">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </div>
-              </div>
-            </a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <!-- Conteúdo principal -->
-      <main>
-        <!-- Card de notícia -->
-        <div class="cartao">
-
-          <!-- Imagem -->
-          <img
-            src="transportepublico.jpg"
-            alt="Transporte público"
-            class="imagem-do-cartao"
-          />
-
-          <!-- Corpo do card -->
-          <section class="corpo-do-cartao">
-            
-            <!-- Título -->
-            <h1 class="titulo-da-noticia">
-              Transporte Público em Belo Horizonte
-            </h1>
-
-            <!-- Categoria e data -->
-            <div class="classificacao-da-noticia">
-              <span class="categoria-da-noticia">Transporte</span>
-              <span class="data-da-noticia">12/03/2026</span>
-            </div>
-
-            <!-- Descrição -->
-            <div class="descricao-da-noticia">
-              O transporte público em Belo Horizonte é focado em uma vasta rede
-              de ônibus, com destaque para o sistema Move (BRT) em corredores
-              exclusivos e uma linha de metrô.
-            </div>
-
-            <!-- Autor -->
-            <div class="autoria-da-noticia">Ana Maria Silva</div>
-          </section>
-
-          <!-- Botão -->
-          <a href="#" class="botao-do-cartao">Ler mais</a>
-        </div>
-      </main>
-    </section>
+    <div class="container">
+        <form>
+            <input id="email" type="text" placeholder="Informe seu e-mail:">
+            <input id="senha" type="password" placeholder="Informe sua senha:">
+            <button type="button" onclick="verificarCredenciais()">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
