@@ -14,10 +14,13 @@
     </header>
 
     <div class="container">
-        <form>
+        <form class="formulario">
+            <h2>Entrar</h2>
             <input id="email" type="text" placeholder="Informe seu e-mail:">
             <input id="senha" type="password" placeholder="Informe sua senha:">
-            <button type="button" onclick="verificarCredenciais()">Entrar</button>
+            <button onclick="verificarCredenciais(); return false;">
+                Entrar
+            </button>
         </form>
     </div>
 </body>
